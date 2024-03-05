@@ -1,0 +1,16 @@
+li {
+    margin:10px;
+    padding:5px;
+    border: 2px black;
+    display:inline-block;
+    background:cornflowerblue;
+}
+
+ul {
+    list-style-type: none;
+}
+
+nav {
+    background-color:#002ea8;
+    margin: 20px auto 20px auto;
+}
