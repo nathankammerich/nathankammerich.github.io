@@ -8,12 +8,12 @@ nav ul {
     list-style-type: none;
     margin: 0 auto;
     padding: 0;
+    justify-content: center;
 }
 nav>ul li {
     position: relative; 
     text-align: center;
     font-weight: bold;
-    float: left;
 }
 nav a {
     text-decoration: none;
