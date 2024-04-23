@@ -1,6 +1,8 @@
 /*format and position the main navigation menu*/
 nav {
-    top: 0px;   
+    width: 100%;
+    height: 50px;
+    margin: 0 auto;
 }
 nav ul {
     display: flex;
@@ -18,9 +20,10 @@ nav>ul li {
 nav a {
     text-decoration: none;
     display: inline-block;
-    padding: 15px 15px 15px 15px;
-    width: 150px; 
-    margin: 2px;
+    padding: 1%;
+    max-width: 150px;
+    min-width: 100px;
+    margin: 5%;
     color:white;
 }
 
