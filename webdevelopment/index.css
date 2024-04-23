@@ -1,0 +1,10 @@
+#ResumeBox
+{
+    margin:auto;
+    border: 4px #223159;
+    width:100px;
+    height:30px;
+    background-color: lightskyblue;
+    padding: 10px;
+    font-size: 20px;
+}
