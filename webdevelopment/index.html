@@ -3,11 +3,11 @@
     <head>
         <!--
             Title: Home Page
-            Use: Landing page for my website, shows nav bar, paragraph.
+            Use: Landing page for my website, shows nav bar, paragraph, photo.
             Author: Nathan Kammerich
             School/Term: University of Missouri Spring 2024
-            Developed: 3/8/24
-            Tested: 3/8/24
+            Developed: 4/22/24
+            Tested: 4/22/24
         -->
         
         <meta charset="utf-8">
@@ -30,18 +30,19 @@
         </header>
 
         <nav>
+            <label id="hamburger">&#9776;</label>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="#">Projects</a>
-                    <ul>
+                    <ul id="mobileHide">
                         <li><a href="#">1</a></li>
                         <li><a href="#">2</a></li>
                         <li><a href="#">3</a></li>
                     </ul>
                 </li>
                 <li><a href="reflection.html">Reflection</a></li>
-                <li><a href="#">Contact</a></li>
+                <li class="lastMobile"><a href="#">Contact</a></li>
 
             </ul>
         </nav>
