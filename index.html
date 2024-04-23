@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <!--
+            Title: Home Page
+            Use: Landing page for my website, shows nav bar, paragraph, photo.
+            Author: Nathan Kammerich
+            School/Term: University of Missouri Spring 2024
+            Developed: 4/22/24
+            Tested: 4/22/24
+        -->
+        
+        <meta charset="utf-8">
+        <title>Home Page</title>
+
+        <link rel="stylesheet" href="nav.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="index.css">
+
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    </head>
+
+    <body>
+        <header>
+            <h1>Nathan Kammerich</h1>
+            <h3>4/22/24</h3>
+        </header>
+
+        <nav>
+            <label id="hamburger">&#9776;</label>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#">Projects</a>
+                    <ul id="mobileHide">
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                    </ul>
+                </li>
+                <li><a href="reflection.html">Reflection</a></li>
+                <li class="lastMobile"><a href="#">Contact</a></li>
+
+            </ul>
+        </nav>
+
+        <main>
+            <div class="grid">
+                <div class="Item1"><img src="../webcontent/KammerichPicture.jpg" alt="Picture of Me"></div>
+                
+                
+
+                <div class="Item2">
+                    <p>
+                        This website is being built to showcase my past work and what I have learned in highschool and college.  
+                        You will see my resume, a video resume, a portfolio section with some of my projects, and my work experience.  
+                        My goal with this is to show what I’ve been working on, and the skills that I have acquired that could be beneficial to the workplace.
+                    </p>        
+                    
+                    <blockquote>My favorite quote is "We judge others by their actions and ourselves by our intentions"</blockquote> 
+                </div>
+
+                <div class="Item3"><p>
+                    <b>Hello</b>, my name is <em>Nathan Kammerich</em> and welcome to my website! <br>
+                </p>
+                </div>
+
+                <div class="Item4">
+                    <div id="ResumeBox">
+                        <a href="../webcontent/Resume.pdf" target="_blank">Resume</a>
+                    </div>    
+
+                </div>
+                
+                
+
+            </div>
+            
+        </main>
+
+        <footer>
+            <p>Nathan Kammerich | nkqmy@umsystem.edu | Copyright © 2024 Nathan Kammerich</p>
+        </footer>
+    </body>
+</html>

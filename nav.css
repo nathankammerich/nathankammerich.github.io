@@ -1,0 +1,118 @@
+#hamburger {
+    display: none;
+}
+
+/*format and position the main navigation menu*/
+nav {
+    width: 100%;
+    height: 50px;
+    margin: 0 auto;
+}
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    justify-content: center;
+}
+nav>ul li {
+    position: relative; 
+    text-align: center;
+    font-weight: bold;
+}
+nav a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 1%;
+    max-width: 150px;
+    min-width: 100px;
+    margin: 1%;
+    color:white;
+}
+
+/*format all navigation <a> elements*/
+nav a:link{
+    background-color :#2d4ea6;
+}
+nav a:hover, nav a:focus {
+    background-color: #002ea8;
+}
+nav a:active{
+    background-color: #001857;
+}
+
+/*position sub-menu or drop-down*/
+nav ul>li ul {
+    position: absolute;
+    top: 100%;
+    display: none;
+}
+nav ul ul li {
+    float:none;
+}
+
+/*special hover to display the drop-down*/
+nav>ul>li:hover>ul{
+    display: block;
+}
+
+/*Mobile Navigation Media Query */
+
+@media only screen and (max-width: 640px) {
+	header {
+		position: relative;
+        height: 40px;
+        display: block;
+        width: 100%;
+	}
+    
+	#hamburger {
+		display: block;
+        float: left;
+        width: 26px;
+        margin-left:10px;
+        font-size: 2em;
+	}
+
+	nav ul, nav:active ul {
+		display: none;
+		position: absolute;
+		padding: 20px 20px 20px 0px;
+		top: 20px;
+	}
+	nav:hover ul {
+		display: block;
+	}
+    nav:hover #mobileHide {
+		display: none;
+	}
+
+	nav li {
+		text-align: center;
+		padding: 0;
+		margin: 0;
+	}
+
+    nav>ul li {
+    text-align: left;
+    font-weight: bold;
+    color: darkmagenta;
+    float: left;
+    }
+
+    nav a {
+        text-decoration: none;
+        display: inline-block;
+        border-top: none;
+        border-bottom: none;
+        padding: 15px 0px 15px 35px;
+        width: 240px;
+        margin-bottom: 2px;
+    }
+
+    nav .lastMobile {border-bottom: 3px dotted magenta;}
+        nav ul li ul {
+            display:none;
+        }
+}
