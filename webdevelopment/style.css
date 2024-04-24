@@ -107,7 +107,9 @@ footer {
 
 /* desktop*/
 @media screen and (min-width: 760px) {
-
+    iframe {
+        width: 20%;
+    }
     
     img {
         max-width: 80%;
@@ -168,6 +170,10 @@ footer {
             "item2"
             "item3"
             "item4";
+    }
+
+    iframe {
+        width:80%;
     }
 
     .item1 {
