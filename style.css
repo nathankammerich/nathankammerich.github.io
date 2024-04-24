@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Montserrat;
+    src:url(Montserrat-Light.ttf)
+}
+
 #ResumeBox
 {
     margin:auto;
@@ -7,6 +12,19 @@
     background-color: lightskyblue;
     padding: 10px;
     font-size: 20px;
+}
+
+#paragraphBox 
+{
+    margin: auto;
+    padding: 5px;
+    width: 90%;
+    text-align:center;
+}
+
+
+#paragraphBox p {
+   text-indent:30px;
 }
 
 h1
@@ -19,8 +37,25 @@ a
     text-decoration:none;
 }
 
-p {
+p 
+{
     font-size: larger;
+    font-family: Montserrat, sans-serif;
+}
+
+.box h2,p {
+    padding-left:5%;
+    padding-right:5%;
+    flex-basis: auto;
+    margin: 0 auto;
+}
+
+.box {
+    display:flex;
+    flex-direction: row;
+    text-align:center;
+    margin: 0 auto;
+    width: 90%;
 }
 
 body
@@ -30,14 +65,48 @@ body
     color: #333333;
     margin-left:3%;
     margin-right:3%;
+    font: montserrat;
+}
+
+footer {
+    margin-top:30px;
+}
+
+/*Print*/
+@media print {
+    
+    p {
+        font: montserrat;
+    }
+
+    h1, h3, header, footer {
+        color: black;
+        font-family: serif;
+    }
+
+    nav {
+       display:none; 
+    }
+
+    body {
+        margin:1in;
+    }
+
 }
 
 /* desktop*/
 @media screen and (min-width: 760px) {
+
+    
     img {
         max-width: 80%;
         text-align:center;
     }
+
+    .box {
+        flex-direction:row;
+    }
+
     .grid {
         display: grid;
         grid-gap: 1em;
@@ -49,6 +118,7 @@ body
         "item3"
         "item4";
     }
+
     .item1 {
         grid-area: item1;
         padding-top: 20px;
@@ -66,6 +136,7 @@ body
         grid-area: item3;
        padding-left: 10px;
     }
+
     .item4 {
         grid-area: item4;
         justify-self: center;
@@ -86,29 +157,35 @@ body
             "item2"
             "item3"
             "item4";
-           }
-
+    }
 
     .item1 {
         grid-area: item1;
         justify-self: center;
         padding-left: 10px;
-      }
+    }
+
+    .box {
+        flex-direction:column;
+    }
        
     img {
         max-width: 80%;
         padding-left: 10px;
         text-align:center;
-     }
+    }
+
     .item2{
         grid-area: item2;
         padding-left: 10px;
        
-        }
+    }
+
     .item3 {
         grid-area: item3;
         padding-left: 10px;
-           }
+    }
+    
     .item4 {
       grid-area: item4;
       justify-self: center;
