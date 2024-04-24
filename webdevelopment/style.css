@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Montserrat;
+    src:url(Montserrat-Light.ttf)
+}
+
 #ResumeBox
 {
     margin:auto;
@@ -35,6 +40,7 @@ a
 p 
 {
     font-size: larger;
+    font-family: Montserrat, sans-serif;
 }
 
 .box h2,p {
@@ -59,10 +65,40 @@ body
     color: #333333;
     margin-left:3%;
     margin-right:3%;
+    font: montserrat;
+}
+
+.icon {
+    max-width:1.5%;
 }
 
 footer {
     margin-top:30px;
+    background-image: url("../webcontent/footerBG.jpg");
+    
+}
+
+/*Print*/
+@media print {
+    
+    p {
+        font: montserrat;
+    }
+
+    h1, h3, header, footer {
+        color: black;
+        font-family: serif;
+        background-image: none;
+    }
+
+    nav {
+       display:none; 
+    }
+
+    body {
+        margin:1in;
+    }
+
 }
 
 /* desktop*/
