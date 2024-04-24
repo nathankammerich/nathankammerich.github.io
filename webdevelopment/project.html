@@ -6,8 +6,8 @@
             Use: To show completed projects.
             Author: Nathan Kammerich
             School/Term: University of Missouri Spring 2024
-            Developed: 4/22/24
-            Tested: 4/22/24
+            Developed: 4/23/24
+            Tested: 4/23/24
         -->
         
         <meta charset="utf-8">
@@ -15,33 +15,40 @@
 
         <link rel="stylesheet" href="nav.css">
         <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
 
     <body>
         <header>
             <h1>Nathan Kammerich</h1>
-            <h3>3/8/24</h3>
+            <h3>4/23/24</h3>
         </header>
 
         <nav>
+            <label id="hamburger">&#9776;</label>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="#">Projects</a>
-                    <ul>
+                <li><a href="project.html">Projects</a>
+                    <ul id="mobileHide">
                         <li><a href="#">1</a></li>
                         <li><a href="#">2</a></li>
                         <li><a href="#">3</a></li>
                     </ul>
                 </li>
                 <li><a href="reflection.html">Reflection</a></li>
-                <li><a href="#">Contact</a></li>
+                <li class="lastMobile"><a href="#">Contact</a></li>
 
             </ul>
         </nav>
 
         <main>
-
+            <div class="box">
+                <h2>Project 1</h2>
+                <h2>Project 2</h2>
+                <h2>Project 3</h2>
+            </div>
+        
         </main>
 
         <footer>

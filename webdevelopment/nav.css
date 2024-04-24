@@ -111,8 +111,7 @@ nav>ul>li:hover>ul{
         margin-bottom: 2px;
     }
 
-    nav .lastMobile {border-bottom: 3px dotted magenta;}
-        nav ul li ul {
-            display:none;
-        }
+    nav ul li ul {
+        display:none;
+    }
 }

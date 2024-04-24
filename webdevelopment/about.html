@@ -7,14 +7,13 @@
             Use: About me paragraph and education information
             Author: Nathan Kammerich
             School/Term: University of Missouri Spring 2024
-            Developed: 4/22/24
-            Tested: 4/22/24
+            Developed: 4/23/24
+            Tested: 4/23/24
         -->
         
         <meta charset="utf-8">
         <title>About</title>
         <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="about.css">
         <link rel="stylesheet" href="nav.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
                 
@@ -23,38 +22,47 @@
     <body>
         <header>
             <h1>Nathan Kammerich</h1>
-            <h3>4/22/24</h3>
+            <h3>4/23/24</h3>
         </header>
 
         <nav>
+            <label id="hamburger">&#9776;</label>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="#">Projects</a>
-                    <ul>
+                <li><a href="project.html">Projects</a>
+                    <ul id="mobileHide">
                         <li><a href="#">1</a></li>
                         <li><a href="#">2</a></li>
-                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
                     </ul>
                 </li>
                 <li><a href="reflection.html">Reflection</a></li>
-                <li><a href="#">Contact</a></li>
+                <li class="lastMobile"><a href="#">Contact</a></li>
 
             </ul>
         </nav>
 
         <main>
-            <h3>Welcome to the About Page</h3>
-
-            <p>
-                My name is Nathan Kammerich, and I am a senior at the University of Missouri where I study information technology.  
-                My biggest passions in life are music and technology.  Ever since I was a kid, I’ve had a love for anything related to technology.  
-                This includes video games, computers, the internet, etc.  I took this class because I’ve always been interested in web design, and 
-                after finishing this class I’ll meet all the requirements for an additional certification with my degree.  I love to listen to music, and 
-                I also enjoy making it, I play both the saxophone and the drums.  I grew up in Columbia Missouri, so I’ve been here my whole life so far.  
-                I figured out pretty quickly as a child that I wanted to go to Mizzou because I wouldn’t have to pay out-of-state tuition, and it 
-                had a lot of ways I could continue to play music while also furthering my career.
-            </p>
+            <div class="item2">
+                <h3>Welcome to the About Page</h3>
+            </div>
+            <div class="item3">
+                <p>
+                    My name is Nathan Kammerich, and I am a senior at the University of Missouri where I study information technology.  
+                    My biggest passions in life are music and technology.  Ever since I was a kid, I’ve had a love for anything related to technology.  
+                    This includes video games, computers, the internet, etc.  
+                </p>  
+            </div>
+            <div class="item4">
+                <p>
+                    I took this class because I’ve always been interested in web design, and 
+                    after finishing this class I’ll meet all the requirements for an additional certification with my degree.  I love to listen to music, and 
+                    I also enjoy making it, I play both the saxophone and the drums.  I grew up in Columbia Missouri, so I’ve been here my whole life so far.  
+                    I figured out pretty quickly as a child that I wanted to go to Mizzou because I wouldn’t have to pay out-of-state tuition, and it 
+                    had a lot of ways I could continue to play music while also furthering my career.
+                </p>
+            </div>  
         </main>
 
         <footer>
