@@ -68,14 +68,18 @@ body
     font: montserrat;
 }
 
+
+.icon:hover {
+    width:2.5%;
+}
 .icon {
-    max-width:1.5%;
+    width:1.5%;
 }
 
 footer {
     margin-top:30px;
     background-image: url("../webcontent/footerBG.jpg");
-    
+
 }
 
 /*Print*/
