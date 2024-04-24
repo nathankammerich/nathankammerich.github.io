@@ -65,23 +65,34 @@ body
     color: #333333;
     margin-left:3%;
     margin-right:3%;
-    font: montserrat;
+    font-family: Montserrat;
+}
+
+
+.icon:hover {
+    width:2.5%;
+}
+.icon {
+    width:1.5%;
 }
 
 footer {
     margin-top:30px;
+    background-image: url("../webcontent/footerBG.jpg");
+
 }
 
 /*Print*/
 @media print {
     
     p {
-        font: montserrat;
+        font-family: Montserrat;
     }
 
     h1, h3, header, footer {
         color: black;
         font-family: serif;
+        background-image: none;
     }
 
     nav {
@@ -96,7 +107,9 @@ footer {
 
 /* desktop*/
 @media screen and (min-width: 760px) {
-
+    iframe {
+        width: 20%;
+    }
     
     img {
         max-width: 80%;
@@ -157,6 +170,10 @@ footer {
             "item2"
             "item3"
             "item4";
+    }
+
+    iframe {
+        width:80%;
     }
 
     .item1 {
