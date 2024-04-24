@@ -65,7 +65,7 @@ body
     color: #333333;
     margin-left:3%;
     margin-right:3%;
-    font: montserrat;
+    font-family: Montserrat;
 }
 
 
@@ -86,7 +86,7 @@ footer {
 @media print {
     
     p {
-        font: montserrat;
+        font-family: Montserrat;
     }
 
     h1, h3, header, footer {
