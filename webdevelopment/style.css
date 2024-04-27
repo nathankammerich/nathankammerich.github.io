@@ -96,6 +96,23 @@ footer {
 
 }
 
+table,th,td {
+    text-align:center;
+    margin:auto;
+}
+
+table, td {
+    border: 2px solid black;
+}
+
+tbody tr:nth-child(odd) {
+    background-color:white;
+}
+
+tbody tr:nth-child(even) {
+    background-color:grey;
+}
+
 /*Print*/
 @media print {
     
@@ -121,6 +138,10 @@ footer {
 
 /* desktop*/
 @media screen and (min-width: 760px) {
+    table, th, td {
+        font-size:larger;
+    }
+    
     p {
         font-size: larger;
     }
@@ -188,6 +209,10 @@ footer {
 /*mobile */
 
 @media screen and (max-width: 759px) {
+    table, th, td {
+        font-size:small;
+    }
+    
     p {
         font-size: medium;
     }
