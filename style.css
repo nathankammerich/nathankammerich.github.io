@@ -5,26 +5,33 @@
 
 #ResumeBox
 {
-    margin:auto;
+    margin: auto;
     border: 4px #223159;
     width:100px;
     height:30px;
     background-color: lightskyblue;
     padding: 10px;
     font-size: 20px;
+    text-align:center;
+    text-decoration: none;
 }
 
 #paragraphBox 
 {
-    margin: auto;
-    padding: 5px;
-    width: 90%;
+    margin: 0 auto;
+    padding: 4px;
+    width: 100%;
     text-align:center;
 }
 
 
 #paragraphBox p {
    text-indent:30px;
+}
+
+#slides {
+    width: 80%;
+    height: 200px;
 }
 
 h1
@@ -39,7 +46,6 @@ a
 
 p 
 {
-    font-size: larger;
     font-family: Montserrat, sans-serif;
 }
 
@@ -56,6 +62,18 @@ p
     text-align:center;
     margin: 0 auto;
     width: 90%;
+}
+
+.tile {
+    width:28%;
+    margin: 5px auto;
+    border: 2px solid black;
+    height:1000px;
+}
+
+.tile img {
+    max-width: 90%;
+    max-height: 300px;
 }
 
 body
@@ -80,6 +98,23 @@ footer {
     margin-top:30px;
     background-image: url("../webcontent/footerBG.jpg");
 
+}
+
+table,th,td {
+    text-align:center;
+    margin:auto;
+}
+
+table, td {
+    border: 2px solid black;
+}
+
+tbody tr:nth-child(odd) {
+    background-color:white;
+}
+
+tbody tr:nth-child(even) {
+    background-color:grey;
 }
 
 /*Print*/
@@ -107,6 +142,15 @@ footer {
 
 /* desktop*/
 @media screen and (min-width: 760px) {
+    table, th, td {
+        font-size:larger;
+    }
+    
+    p {
+        font-size: larger;
+    }
+    
+
     iframe {
         width: 20%;
     }
@@ -118,6 +162,11 @@ footer {
 
     .box {
         flex-direction:row;
+    }
+
+    .tile {
+        width: 28%; 
+        font-size:medium;
     }
 
     .grid {
@@ -160,6 +209,14 @@ footer {
 /*mobile */
 
 @media screen and (max-width: 759px) {
+    table, th, td {
+        font-size:small;
+    }
+    
+    p {
+        font-size: medium;
+    }
+
     .grid {
         display: grid;
         grid-gap: 1em;
@@ -184,6 +241,12 @@ footer {
 
     .box {
         flex-direction:column;
+    }
+
+    .tile {
+        width: 90%;
+        font-size:small;
+
     }
        
     img {
